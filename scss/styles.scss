@@ -1,0 +1,445 @@
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../Gotham/Gotham-Light.otf');
+}
+
+$dark-grey: #323031;
+$light-grey: #5A5B5D;
+$light-yellow: #FFF21F;
+$dark-yellow: #FFD41D;
+
+@for $i from 1 through 15 {
+    .bh-padding-#{$i} {
+        padding: #{$i}0px 0px;
+    }
+}
+
+@for $i from 4 through 14 {
+    .bh-max-width-#{$i} {
+        max-width: #{$i * 10}0px;
+        margin: auto;
+    }
+}
+
+
+body {
+
+    .bh-max-width-810 {
+        max-width: 810px;
+        margin: auto;
+    }
+
+    .no-top-padding {
+        padding-top: 0px;
+    }
+
+    .grecaptcha-badge {
+        display: none !important;
+    }
+
+    background-color: $dark-grey;
+    font-family: 'Gotham', sans-serif;
+
+    h1 {
+        font-size: 68px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p, a {
+        font-size: 15px;
+    }
+
+    .bh-button {
+        padding: 3px 15px;
+        border-radius: 100px;
+        border-width: 2px;
+        border-style: solid;
+        transition: all 0.5s;
+        cursor: pointer;
+        &-black {
+            background-color: $dark-grey;
+            color: #fff;
+            border-color: $dark-grey;
+        }
+        &-gradient {
+            background: $dark-yellow;
+            background-image: -webkit-linear-gradient(left, $light-yellow, $dark-yellow);
+            background-image: -moz-linear-gradient(left, $light-yellow, $dark-yellow);
+            background-image: -o-linear-gradient(left, $light-yellow, $dark-yellow);
+            background-image: linear-gradient(to right, $light-yellow, $dark-yellow);
+            color: $dark-grey;
+            border-color: #fff;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $dark-grey;
+            font-weight: 400;
+            border-color: $dark-grey;
+            background-color: transparent;
+            background: transparent;
+        }
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .bh-header-section {
+        position: relative;
+        background: $dark-yellow;
+        background-image: -webkit-linear-gradient(left, $light-yellow, $dark-yellow);
+        background-image: -moz-linear-gradient(left, $light-yellow, $dark-yellow);
+        background-image: -o-linear-gradient(left, $light-yellow, $dark-yellow);
+        background-image: linear-gradient(to right, $light-yellow, $dark-yellow);
+        .bh-plus-design {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .bh-header-triangle {
+            width: 0;
+            height: 0;
+            position: relative;
+            border-bottom: 200px solid $dark-grey;
+            // This is set in the setTriangle function
+            border-left: 98.99vw solid transparent;
+            z-index: 10;
+        }
+        .nav {
+            z-index: 1000;
+            display: flex;
+            margin: auto;
+            padding: 20px 0px;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: inline-block;
+                width: 150px;
+                text-align: center;
+                z-index: 1000;
+                color: $dark-grey;
+                transition: color 0.5s;
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            img {
+                z-index: 1000;
+                width: 100px;
+            }
+        }
+        .bh-mobile-nav {
+            display: none;
+            text-align: center;
+            img {
+                width: 125px;
+                z-index: 1000;
+                padding: 10px;
+                position: relative;
+            }
+        }
+        .bh-social-menu {
+            position: absolute;
+            top: 60px;
+            right: 40px;
+            img {
+                width: 20px;
+                transition: transform 0.25s;
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+        .bh-established-tag {
+            transform: rotate(90deg);
+            transform-origin: left;
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+    }
+
+    .bh-about-section, .bh-client-section {
+        z-index: 1;
+        position: relative;
+        background-color: $dark-grey;
+        h2, p {
+            color: #fff;
+        }
+    }
+
+    .bh-services-section {
+        z-index: 1;
+        position: relative;
+        background-color: #fff;
+        .bh-svg-container {
+            min-height: 310px;
+            padding-bottom: 10px;
+            max-width: 300px;
+            margin: auto;
+        }
+        .svg-anim {
+            display: none;
+            &-active {
+                display: block;
+            }
+        }
+        .bh-services-dropdown {
+            max-height: 0px;
+            overflow: hidden;
+            margin-top: 30px;
+            transition: max-height 1s;
+            .row {
+                padding: 25px 15px;
+            }
+            img {
+                padding: 10px;
+                width: 100%;
+                max-width: 210px;
+            }
+            &.open {
+                max-height: 400px;
+            }
+        }
+    }
+
+    .bh-client-carousel-row {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        .bh-client-carousel-mover {
+            width: 6265px;
+            margin-top: 20px;
+            &.left {
+                .bh-client-carousel-logo.first.client-anim-active {
+                    -webkit-animation: bannermoveLeft 60s linear infinite;
+                    animation: bannermoveLeft 60s linear infinite;
+                }
+            }
+
+            .bh-client-carousel-logo {
+                display: inline-block;
+                height: 135px;
+                width: 280px;
+                img {
+                    width: 100%;
+                }
+                // Spotty support for targeting psuedo elements with animations so not using nth-child here.
+                &.first.client-anim-active {
+                    -webkit-animation: bannermove 60s linear infinite;
+                    animation: bannermove 60s linear infinite;
+                }
+            }
+        }
+    }
+
+    .bh-contact-section {
+        background-color: #fff;
+        .bh-vertical-center {
+            display: flex;
+            h2 {
+                align-self: center;
+            }
+        }
+        .container form .container .row {
+            text-align: left;
+        }
+        form input:not(.bh-submit){
+            width: 100%;
+            outline: none;
+            border-bottom-style: solid;
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+            border-color: $dark-grey;
+            color: $dark-grey;
+            font-weight: 400;
+            border-width: 2px;
+        }
+    }
+
+    .bh-footer {
+        color: $light-grey;
+        padding: 20px 0px;
+        font-size: 13px;
+        .row {
+            margin: 0px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .bh-footer-logo {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                max-width: 250px;
+                width: 100%;
+            }
+        }
+    }
+
+    .bh-mobile-footer {
+        display: none;
+        text-align: center;
+        background-color: #fff;
+        img {
+            max-width: 100%;
+            width: 160px;
+            padding: 7px;
+        }
+    }
+
+}
+
+@keyframes bannermove {
+ 0% {
+    margin-left: -4850px;
+ }
+ 100% {
+    margin-left: 0px;
+ }
+ 
+}
+
+@-webkit-keyframes bannermove {
+ 0% {
+   margin-left: -4850px;
+ }
+ 100% {
+   margin-left: 0px;
+ }
+ 
+}
+
+@keyframes bannermoveLeft {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -4850px;
+ }
+ 
+}
+
+@-webkit-keyframes bannermoveLeft {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -4850px;
+ }
+ 
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        .bh-footer .large-hide {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        .bh-services-section .bh-svg-container {
+            min-height: 280px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        .bh-header-section .nav, .bh-header-section .bh-established-tag, .bh-header-section .bh-social-menu {
+            display: none;
+        }
+
+        div.bh-header-section div.bh-mobile-nav {
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        .bh-services-section .bh-svg-container {
+            min-height: 210px;
+        }
+        .bh-contact-section {
+            font-size: 12px;
+        }
+
+        @for $i from 1 through 15 {
+            .bh-padding-#{$i} {
+                padding: #{($i * 10) / 2}px 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        .bh-header-section {
+            .bh-header-triangle {
+                border-bottom: 75px solid #323031;
+            }
+        }
+        .bh-services-section {
+            .bh-svg-container {
+                min-height: 150px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            .bh-services-dropdown {
+                .row {
+                    padding: 0px 15px;
+                }
+                &.open {
+                    max-height: 610px;
+                }
+            }
+        }
+        .bh-client-carousel-row .bh-client-carousel-mover {
+            margin-top: 10px;
+        }
+        .bh-contact-section {
+            padding: 100px 10px;
+            font-size: 13px;
+            h2 {
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding-bottom: 30px;
+            }
+        }
+        .bh-footer {
+            display: none;
+        }
+        .bh-mobile-footer {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body  {
+        .bh-header-section .bh-plus-design object {
+            transform: scale(2.5);
+        }
+        .bh-services-section div.bh-svg-container {
+            min-height: 100px;
+        }
+    }
+}

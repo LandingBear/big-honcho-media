@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 340 340"
+   style="enable-background:new 0 0 340 340;"
+   xml:space="preserve"
+   sodipodi:docname="services-radio-icon.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata41"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs39" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="741"
+   inkscape:window-height="480"
+   id="namedview37"
+   showgrid="false"
+   inkscape:zoom="0.69411765"
+   inkscape:cx="-9.3644068"
+   inkscape:cy="170"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+
+svg {
+  height: 330px;
+}
+
+  @-webkit-keyframes bh-animate-in {
+      from {
+          -webkit-transform: scale(0);
+      }
+      to {
+          -webkit-transform: scale(1);
+      }
+  }
+
+@keyframes bh-animate-in {
+      from {
+          -webkit-transform: scale(0);
+      }
+      to {
+          -webkit-transform: scale(1);
+      }
+}
+
+  .bh-animate-in, .st0, .st1, .st3 {
+      animation: bh-animate-in 0.25s ease forwards;
+      transform-origin: center;
+  }
+
+  .st0, .st1 {
+    animation-delay: 0.25s;
+    transform: scale(0);
+  }
+
+  .st3 {
+    animation-delay: 0.12s;
+    transform: scale(0);
+  }
+
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+</style>
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="135.0622"
+   y1="278.186"
+   x2="220.7601"
+   y2="278.186"
+   gradientTransform="matrix(0.9999 0.0137 0.0137 -0.9999 -10.7717 405.9675)">
+	<stop
+   offset="0"
+   style="stop-color:#FFF21F"
+   id="stop4" />
+	<stop
+   offset="1"
+   style="stop-color:#FFD21B"
+   id="stop6" />
+</linearGradient>
+<path
+   class="st0"
+   d="M171.29,100.81c23.57,0,42.6,19.16,42.3,42.59l-0.2,15.71l-85.69-0.01l0.2-15.71  C128.2,119.96,147.72,100.81,171.29,100.81z"
+   id="path9" />
+<linearGradient
+   id="SVGID_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="118.8588"
+   y1="1449.9301"
+   x2="204.8543"
+   y2="1449.9301"
+   gradientTransform="matrix(0.9999 -0.0137 0.0137 0.9999 -10.7717 -1248.7493)">
+	<stop
+   offset="0"
+   style="stop-color:#FFF21F"
+   id="stop11" />
+	<stop
+   offset="1"
+   style="stop-color:#FFD21B"
+   id="stop13" />
+</linearGradient>
+<path
+   class="st1"
+   d="M171.29,239.13c23.57,0,42.6-19.16,42.3-42.59l-0.2-37.44l-85.69-0.01l0.2,37.45  C128.2,219.97,147.72,239.13,171.29,239.13z"
+   id="path16" />
+<g
+   id="g25" class="bh-animate-in">
+	
+		<linearGradient
+   id="SVGID_3_"
+   gradientUnits="userSpaceOnUse"
+   x1="170"
+   y1="280.82"
+   x2="170"
+   y2="7.46"
+   gradientTransform="matrix(1 0 0 -1 0 342)">
+		<stop
+   offset="0"
+   style="stop-color:#FFF21F"
+   id="stop18" />
+		<stop
+   offset="1"
+   style="stop-color:#FFD21B"
+   id="stop20" />
+	</linearGradient>
+	<path
+   class="st2"
+   d="M170,334.54c-75.37,0-136.68-61.31-136.68-136.68S94.63,61.18,170,61.18s136.68,61.31,136.68,136.68   S245.37,334.54,170,334.54z M170,64.5c-73.53,0-133.36,59.82-133.36,133.36c0,73.53,59.82,133.36,133.36,133.36   c73.53,0,133.36-59.82,133.36-133.36C303.36,124.33,243.53,64.5,170,64.5z"
+   id="path23" />
+</g>
+<g
+   id="g34">
+	
+		<linearGradient
+   id="SVGID_4_"
+   gradientUnits="userSpaceOnUse"
+   x1="108.2452"
+   y1="200.011"
+   x2="231.8227"
+   y2="76.4336"
+   gradientTransform="matrix(1 0 0 -1 0 342)">
+		<stop
+   offset="0"
+   style="stop-color:#58595B"
+   id="stop27" />
+		<stop
+   offset="1"
+   style="stop-color:#404041"
+   id="stop29" />
+	</linearGradient>
+	<path
+   class="st3"
+   d="M238.66,152.92h-136.1c-6.9,0-12.6,5.59-12.68,12.45l-0.12,9.21c-0.09,6.87,5.46,12.45,12.36,12.45h1.51   l-0.16,12.58c-0.43,33.04,23.71,60.49,55.53,65.37l-0.26,20.04h-21.06c-2.52,0-4.58,2.03-4.61,4.53c-0.03,2.49,1.97,4.52,4.49,4.52   h63.85c2.51,0,4.58-2.03,4.61-4.52c0.03-2.5-1.98-4.53-4.49-4.53h-22.68l0.26-20.01c32.05-4.79,57.01-32.29,57.44-65.4l0.16-12.58   h1.51c6.9,0,12.6-5.58,12.69-12.45l0.12-9.21C251.12,158.51,245.57,152.92,238.66,152.92z M123.92,187.02h89.1h14.59l-0.16,12.58   c-0.36,28.11-21.22,51.52-48.22,56.21l0.08-6.37c-3.22,0.63-6.56,0.97-9.95,0.97c-3.48,0-6.87-0.35-10.15-1.01l-0.08,6.37   c-26.77-4.78-46.92-28.15-46.55-56.18l0.16-12.58h14.59 M241.81,174.58c-0.02,1.88-1.59,3.4-3.47,3.4h-136.1   c-1.88,0-3.41-1.52-3.38-3.4l0.12-9.21c0.02-1.87,1.59-3.4,3.47-3.4h136.1c1.88,0,3.41,1.52,3.38,3.4L241.81,174.58z"
+   id="path32" />
+</g>
+</svg>
